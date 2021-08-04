@@ -1,0 +1,160 @@
+h1 {
+  font-size: $fs-lg;
+  color: $veryLightGray;
+  // font-weight: lighter;
+
+  @include breakpoints-up(medium) {
+    font-size: $fs-xlg;
+  }
+}
+
+h2 {
+  font-size: $fs-md;
+  color: $veryLightGray;
+  font-weight: lighter;
+  @include breakpoints-up(medium) {
+    font-size: $fs-lg;
+  }
+}
+
+h3 {
+  font-size: $fs-mmd;
+  color: $veryLightGray;
+  font-weight: lighter;
+  @include breakpoints-up(large) {
+    font-size: $fs-md;
+  }
+}
+
+h4 {
+  font-size: $fs-mmd;
+  color: $veryLightGray;
+}
+
+p {
+  font-size: $fs-sm;
+  color: $veryLightGray;
+  font-weight: lighter;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  @include breakpoints-up(medium) {
+    font-size: $fs-smd;
+  }
+}
+
+.qoute {
+  font-family: "Rock salt", sans-serif;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.author {
+  text-align: right;
+  font-weight: bold;
+}
+
+.tech-name {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.profession {
+  position: relative;
+  width: 100%;
+  // border: 1px solid blue;
+  display: inline-block;
+}
+
+.tech-use {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.line1 {
+  height: 3px;
+  display: block;
+  background-color: $pastelOrange;
+  margin: 0.4rem auto 1.5rem auto;
+  width: 26rem;
+  @include breakpoints-up(large) {
+    margin: 0.4rem 0 1.5rem -0.4rem;
+  }
+}
+
+svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  path {
+    fill: $veryLightGray;
+    transition: fill 250ms ease-in-out;
+  }
+}
+
+a {
+  color: $veryLightGray;
+  text-decoration: none;
+  font-size: $fs-sm;
+  text-transform: capitalize;
+  transition: color 250ms ease-in-out;
+  &:hover {
+    color: $pastelOrange;
+
+    svg path {
+      fill: $pastelOrange;
+    }
+  }
+}
+
+ul {
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 2rem;
+  }
+}
+
+.title-head {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  .line {
+    height: 3px;
+    width: 106%;
+    margin-left: -3%;
+    bottom: 3px;
+    background-color: $pastelOrange;
+    position: absolute;
+  }
+
+  @include breakpoints-down(medium) {
+    margin-bottom: 4rem;
+  }
+}
+
+.title-head-2 {
+  display: inline-block;
+  margin: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: relative;
+  text-align: center;
+
+  @include breakpoints-up(medium) {
+    left: 0;
+    transform: translate(0);
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+  }
+  .line {
+    height: 3px;
+    width: 106%;
+    margin-left: -3%;
+    bottom: 3px;
+    background-color: $pastelOrange;
+    position: absolute;
+  }
+}

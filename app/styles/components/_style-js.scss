@@ -1,0 +1,54 @@
+.active {
+  transform: translateY(0%);
+  max-height: initial;
+  overflow: visible;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.header {
+  .burger-close {
+    transform: rotate(180deg);
+    .burg:nth-child(2) {
+      visibility: hidden;
+    }
+    .burg:first-child {
+      transform: rotate(-45deg);
+      margin-top: 12px;
+      position: absolute;
+      top: 4px;
+    }
+
+    .burg:last-child {
+      transform: rotate(45deg);
+      margin-bottom: 14px;
+      position: absolute;
+      bottom: 4px;
+    }
+  }
+
+  .open-nav {
+    top: 0;
+  }
+
+  .nav-bar-home {
+    background: transparent;
+    img {
+      display: none;
+    }
+
+    .nav-bar-links {
+      display: none;
+      @include breakpoints-up(medium) {
+        display: none;
+      }
+    }
+
+    .burger {
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+    }
+  }
+}

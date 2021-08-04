@@ -1,0 +1,44 @@
+{
+  "landingPages" : [
+    {
+      "id" : 1,
+      "prevLink" : "#",
+      "githubLink": "#",
+      "logo" : "./images/landingPages-logos/easybank-logo.svg",
+      "alt" : "easy-bank-log"
+    },
+
+    {
+      "id" : 2,
+      "prevLink" : "#",
+      "githubLink": "#",
+      "logo" : "./images/landingPages-logos/insure-logo.svg",
+      "alt" : "insure-logo"
+    },
+
+    {
+      "id" : 3,
+      "prevLink" : "#",
+      "githubLink": "#",
+      "logo" : "./images/landingPages-logos/crowdfund-logo.svg",
+      "alt" : "crowdfund-logo"
+    },
+
+    {
+      "id" : 4,
+      "prevLink" : "#",
+      "githubLink": "#",
+      "logo" : "./images/landingPages-logos/sunnyside-logo.svg",
+      "alt" : "sunnyside-logo"
+    },
+
+    {
+      "id" : 5,
+      "prevLink" : "#",
+      "githubLink": "#",
+      "logo" : "./images/landingPages-logos/blogr-logo.svg",
+      "alt" : "blogr-logo"
+    }
+  ]
+}
+ 

@@ -1,0 +1,79 @@
+.about {
+  &-me {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    img {
+      margin-top: -5rem;
+      max-height: 30%;
+    }
+    &__desc {
+      width: 75%;
+      text-align: left;
+
+      p {
+        margin-bottom: 4rem;
+      }
+    }
+
+    @include breakpoints-down(medium) {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      img {
+        min-width: 30%;
+        height: 80%;
+        top: 10rem;
+        position: fixed;
+        opacity: 0.5;
+        z-index: -1;
+      }
+
+      &__desc {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.technologies {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+
+  @include breakpoints-up(medium) {
+    padding: 2rem 3rem;
+  }
+  @include breakpoints-up(large) {
+    padding: 2rem 5rem;
+  }
+
+  .tech-container {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: $veryDarkBlue;
+    border-radius: 10px;
+    border: 1px solid $pastelOrange;
+    padding: 1rem;
+    gap: 3rem;
+
+    @include breakpoints-up(medium) {
+      margin-top: 2rem;
+      width: 45%;
+    }
+    @include breakpoints-up(large) {
+      margin-top: 5rem;
+      width: 30%;
+    }
+    img {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+}

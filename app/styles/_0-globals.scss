@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: $veryLightGray;
+  color: $veryDarkBlue;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &-p-all {
+    padding: 5.5rem;
+  }
+}
+
+.cont-item {
+  position: absolute;
+  width: 90%;
+  background-color: $alphaDarkBlue;
+  border-radius: 5px;
+  top: 0;
+  margin: 10rem 5% 0 5%;
+  transform: translateY(20%);
+  transition: all 200ms ease-in-out;
+  max-height: 0rem;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+}

@@ -1,0 +1,129 @@
+.contacts {
+  &__content {
+    padding: 0 2rem 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include breakpoints-up(medium) {
+      padding: 0rem 4rem 5rem 4rem;
+    }
+    @include breakpoints-up(large) {
+      flex-direction: row;
+    }
+
+    .contact-info {
+      width: 100%;
+      margin-bottom: 2rem;
+      @include breakpoints-up(large) {
+        width: 40%;
+        margin: 0;
+      }
+
+      ul {
+        margin-top: 0;
+        @include breakpoints-up(large) {
+          margin-top: 2rem;
+        }
+        li {
+          padding: 1rem 2rem;
+          font-size: $fs-sm;
+          text-transform: capitalize;
+          color: $veryLightGray;
+          font-weight: bold;
+          border: 1px solid $pastelOrange;
+          margin-bottom: 2rem;
+          margin-right: 0;
+          display: flex;
+          align-items: center;
+
+          @include breakpoints-down(small) {
+            font-size: 13px;
+            padding: 1rem;
+          }
+          img {
+            display: inline;
+            height: 4rem;
+            width: 4rem;
+            margin-right: 2rem;
+
+            @include breakpoints-down(small) {
+              height: 2.5rem;
+              width: 2.5rem;
+              margin-right: 1rem;
+            }
+          }
+
+          span {
+            font-style: italic;
+            font-weight: lighter;
+            margin-left: 1rem;
+            text-transform: none;
+          }
+
+          .contact-social-icons {
+            a {
+              &:hover {
+                img {
+                  transform: scale(1.2);
+                }
+              }
+              img {
+                height: 2rem;
+                width: 2rem;
+                margin-right: 0;
+                transition: all 250ms ease-in-out;
+                margin-top: 5px;
+
+                @include breakpoints-down(small) {
+                  height: 1.7rem;
+                  width: 1.7rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      width: 100%;
+      padding: 2rem;
+      background-color: $veryLightGray;
+      @include breakpoints-up(medium) {
+        padding: 3rem;
+      }
+      @include breakpoints-up(large) {
+        width: 55%;
+        padding: 4rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid pink;
+
+        label {
+          font-size: $fs-sm;
+        }
+        input {
+          // font-size: $fs-ssm;
+          padding: 1rem;
+          border: none;
+          border-bottom: 2px solid $veryDarkBlue;
+          margin-bottom: 3rem;
+          background-color: transparent;
+          width: 100%;
+        }
+
+        .message {
+          border: 2px solid $veryDarkBlue;
+          min-height: 13rem;
+          padding: 1rem 2rem;
+          overflow: auto;
+          font-family: "Noto Sans", sans-serif;
+        }
+      }
+    }
+  }
+}

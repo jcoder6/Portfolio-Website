@@ -1,0 +1,156 @@
+.projects {
+  .title-head {
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+  &-container {
+    // border: 1px solid pink;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0rem;
+    width: 90%;
+    margin: auto;
+    @include breakpoints-up(medium) {
+      justify-content: space-between;
+      padding: 1rem;
+      width: 96%;
+    }
+    @include breakpoints-up(large) {
+      padding: 2rem;
+      width: 100%;
+    }
+    .project-item {
+      // border: 1px solid white;
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      position: relative;
+
+      @include breakpoints-up(medium) {
+        width: 48%;
+      }
+      @include breakpoints-up(large) {
+        width: 32%;
+      }
+      &__img-container {
+        position: relative;
+        min-height: 20rem;
+        background-color: $veryLightGray;
+        cursor: pointer;
+        overflow: hidden;
+        &:hover {
+          .project-links {
+            transform: translateY(0);
+          }
+        }
+
+        img {
+          position: absolute;
+          width: 60%;
+          max-height: 5rem;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .project-links {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 2;
+          transform: translateY(100%);
+          background-color: rgba($pastelOrange, 1);
+          display: flex;
+          transition: transform 250ms ease-in;
+          transition-delay: 250ms;
+          justify-content: center;
+          align-items: center;
+          gap: 5rem;
+          cursor: pointer;
+          a {
+            font-size: $fs-smd;
+            i {
+              margin-right: 1rem;
+            }
+            &:hover {
+              color: $veryDarkBlue;
+            }
+          }
+        }
+      }
+      &__desc {
+        background-color: $veryDarkBlue;
+        padding: 2rem;
+        position: relative;
+        h4 {
+          margin-bottom: 1rem;
+        }
+        .tech-use {
+          margin-bottom: 1rem;
+        }
+        .project-desc {
+          font-size: 14px;
+        }
+      }
+
+      .btn-container-left {
+        position: absolute;
+        top: 0;
+        min-height: 20rem;
+        width: 15%;
+        left: 0;
+      }
+
+      .btn-container-right {
+        position: absolute;
+        top: 0;
+        min-height: 20rem;
+        width: 15%;
+        right: 0;
+      }
+      span {
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+      .pnext-btn {
+        right: 1.3rem;
+        &:hover {
+          i {
+            color: rgba($veryDarkBlue, 0.7);
+          }
+        }
+        i {
+          font-size: 7rem;
+          color: rgba($veryDarkBlue, 0.3);
+          transition: color 200ms linear;
+          @include breakpoints-down(small) {
+            font-size: 5rem;
+          }
+        }
+      }
+      .pprev-btn {
+        left: 1.3rem;
+        &:hover {
+          i {
+            color: rgba($veryDarkBlue, 0.7);
+          }
+        }
+        i {
+          font-size: 7rem;
+          color: rgba($veryDarkBlue, 0.3);
+          transition: color 200ms linear;
+          @include breakpoints-down(small) {
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+  }
+}

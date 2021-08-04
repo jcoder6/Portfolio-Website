@@ -1,0 +1,63 @@
+@use './components/animation' as *;
+.home {
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: all 500ms ease-in-out;
+
+  @include breakpoints-up(large) {
+    padding: 10rem;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(../../images/computer.png);
+  }
+
+  &__gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(#3d3b3b, 0.68), transparent);
+    z-index: -1;
+
+    @include breakpoints-down(medium) {
+      background: linear-gradient(to bottom, rgba(#3b3b3b, 0.68), transparent);
+    }
+  }
+
+  &__content {
+    // border: 1px solid pink;
+    text-align: center;
+    width: 90%;
+    margin-top: 15rem;
+    @include breakpoints-up(large) {
+      text-align: left;
+      margin-top: 0;
+    }
+    .links {
+      margin-bottom: 2rem;
+      visibility: hidden;
+      display: none;
+      opacity: 0;
+
+      @include breakpoints-up(medium) {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
