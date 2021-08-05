@@ -51,15 +51,13 @@ function checkIfHome() {
 // script for toggling Landing Pages Projects
 
 const landingPages = new XMLHttpRequest;
-landingPages.open('GET', "/projects.json", true);
+landingPages.open('GET', "projects.json", true);
 landingPages.send();
 
 landingPages.onload = function() {
   if(this.readyState === 4){
-    // console.log(this.status);
-    const jsonRes = JSON.parse(JSON.stringify(landingPages.responseText));
-    // console.log(jsonRes)
-    const res = JSON.parse(jsonRes);
+    const res = JSON.parse(landingPages.responseText);
+    // const res = JSON.parse(jsonRes);
 
     const projectImgContainer = document.getElementById('project-img-container');
     document.querySelector(".pprev-btn").addEventListener('click', projectPrev);
@@ -94,6 +92,8 @@ landingPages.onload = function() {
             <a target="_blank" href="${landingPagesData.githubLink}"><i class="fab fa-github"></i>Git Hub</a>
           </div>`
     }
+  } else {
+    console.log("ERROR JSON HASN'T CAUGHT");
   }
 }
 
