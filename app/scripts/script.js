@@ -57,8 +57,9 @@ landingPages.send();
 landingPages.onreadystatechange = function() {
   if(this.readyState === 4 && this.status === 200){
     // console.log(this.status);
-    const res = JSON.parse(landingPages.responseText);
-    // console.log(JSON.parse(landingPages.responseText))
+    const jsonRes = JSON.parse(JSON.stringify(landingPages.responseText));
+    // console.log(jsonRes)
+    const res = JSON.parse(jsonRes);
 
     const projectImgContainer = document.getElementById('project-img-container');
     document.querySelector(".pprev-btn").addEventListener('click', projectPrev);
@@ -81,7 +82,7 @@ landingPages.onreadystatechange = function() {
 
     
     function projectPrev() {
-      console.log("prev clicked")
+      // console.log("prev clicked")
       landingPagesIndex--;
       if(landingPagesIndex < 0) landingPagesIndex = res.landingPages.length - 1;
       // console.log(landingPagesData.alt);
