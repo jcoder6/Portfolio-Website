@@ -51,11 +51,11 @@ function checkIfHome() {
 // script for toggling Landing Pages Projects
 
 const landingPages = new XMLHttpRequest;
-landingPages.open('GET', "./../../images/projects.json", true);
+landingPages.open('GET', "/projects.json", true);
 landingPages.send();
 
-landingPages.onreadystatechange = function() {
-  if(this.readyState === 4 && this.status === 200){
+landingPages.onload = function() {
+  if(this.readyState === 4){
     // console.log(this.status);
     const jsonRes = JSON.parse(JSON.stringify(landingPages.responseText));
     // console.log(jsonRes)
