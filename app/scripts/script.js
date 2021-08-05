@@ -54,9 +54,12 @@ const landingPages = new XMLHttpRequest;
 landingPages.open('GET', "./../../images/projects.json", true);
 landingPages.send();
 
-landingPages.onload = function() {
-  if(landingPages.readyState === 4){
+landingPages.onreadystatechange = function() {
+  if(this.readyState === 4 && this.status === 200){
+    // console.log(this.status);
     const res = JSON.parse(landingPages.responseText);
+    // console.log(JSON.parse(landingPages.responseText))
+
     const projectImgContainer = document.getElementById('project-img-container');
     document.querySelector(".pprev-btn").addEventListener('click', projectPrev);
     document.querySelector(".pnext-btn").addEventListener('click', projectNext);
