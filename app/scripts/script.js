@@ -51,7 +51,7 @@ function checkIfHome() {
 // script for toggling Landing Pages Projects
 
 const landingPages = new XMLHttpRequest;
-landingPages.open('GET', "../../../projects.json", true);
+landingPages.open('GET', "./../../images/projects.json", true);
 landingPages.send();
 
 landingPages.onload = function() {
