@@ -1,41 +1,41 @@
 {
-  "landingPages" : [
+  "landingPages": [
     {
       "id" : 1,
-      "prevLink" : "#",
-      "githubLink": "#",
+      "previewLink" : "https://jcoder6.github.io/EasyBank-landing-page/",
+      "githubLink": "https://github.com/jcoder6/EasyBank-landing-page",
       "logo" : "./images/landingPages-logos/easybank-logo.svg",
       "alt" : "easy-bank-log"
     },
 
     {
       "id" : 2,
-      "prevLink" : "#",
-      "githubLink": "#",
+      "previewLink" : "https://jcoder6.github.io/Insure-landing-pager/",
+      "githubLink": "https://github.com/jcoder6/Insure-landing-pager",
       "logo" : "./images/landingPages-logos/insure-logo.svg",
       "alt" : "insure-logo"
     },
 
     {
       "id" : 3,
-      "prevLink" : "#",
-      "githubLink": "#",
+      "previewLink" : "https://jcoder6.github.io/CrowdFund1st/",
+      "githubLink": "https://github.com/jcoder6/CrowdFund1st",
       "logo" : "./images/landingPages-logos/crowdfund-logo.svg",
       "alt" : "crowdfund-logo"
     },
 
     {
       "id" : 4,
-      "prevLink" : "#",
-      "githubLink": "#",
+      "previewLink" : "https://jcoder6.github.io/Sunny-side/",
+      "githubLink": "https://github.com/jcoder6/Sunny-side",
       "logo" : "./images/landingPages-logos/sunnyside-logo.svg",
       "alt" : "sunnyside-logo"
     },
 
     {
       "id" : 5,
-      "prevLink" : "#",
-      "githubLink": "#",
+      "previewLink" : "https://jcoder6.github.io/blog-landingpage/",
+      "githubLink": "https://github.com/jcoder6/blog-landingpage",
       "logo" : "./images/landingPages-logos/blogr-logo.svg",
       "alt" : "blogr-logo"
     }

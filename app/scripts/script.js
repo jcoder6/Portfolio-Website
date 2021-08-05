@@ -75,8 +75,8 @@ landingPages.onload = function() {
       projectImgContainer.innerHTML = 
           `<img src="${landingPagesData.logo}" alt="${landingPagesData.alt}">
           <div class="project-links">
-            <a href="${landingPagesData.previewLink}"><i class="fas fa-eye"></i>Preview</a>
-            <a href="${landingPagesData.githubLink}"><i class="fab fa-github"></i>Git Hub</a>
+            <a target="_blank" href="${landingPagesData.previewLink}"><i class="fas fa-eye"></i>Preview</a>
+            <a target="_blank" href="${landingPagesData.githubLink}"><i class="fab fa-github"></i>Git Hub</a>
           </div>`
     }
 
@@ -90,8 +90,8 @@ landingPages.onload = function() {
       projectImgContainer.innerHTML = 
           `<img src="${landingPagesData.logo}" alt="${landingPagesData.alt}">
           <div class="project-links">
-            <a href="${landingPagesData.previewLink}"><i class="fas fa-eye"></i>Preview</a>
-            <a href="${landingPagesData.githubLink}"><i class="fab fa-github"></i>Git Hub</a>
+            <a target="_blank" href="${landingPagesData.previewLink}"><i class="fas fa-eye"></i>Preview</a>
+            <a target="_blank" href="${landingPagesData.githubLink}"><i class="fab fa-github"></i>Git Hub</a>
           </div>`
     }
   }
