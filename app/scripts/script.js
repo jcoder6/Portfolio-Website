@@ -51,17 +51,18 @@ function checkIfHome() {
 // script for toggling Landing Pages Projects
 
 const landingPages = new XMLHttpRequest;
-landingPages.open('GET', "/projects.json", true);
+landingPages.open('GET', "../../../projects.json", true);
 landingPages.send();
 
 landingPages.onload = function() {
-  if(this.readyState === 4){
-    const res = JSON.parse(this.responseText);
+  if(landingPages.readyState === 4){
+    const res = JSON.parse(landingPages.responseText);
     const projectImgContainer = document.getElementById('project-img-container');
     document.querySelector(".pprev-btn").addEventListener('click', projectPrev);
     document.querySelector(".pnext-btn").addEventListener('click', projectNext);
     landingPagesIndex = 0;
     let landingPagesData = res.landingPages[landingPagesIndex];
+
     function projectNext() {
       landingPagesIndex++
       if(landingPagesIndex > res.landingPages.length - 1) landingPagesIndex = 0;
@@ -77,9 +78,11 @@ landingPages.onload = function() {
 
     
     function projectPrev() {
+      console.log("prev clicked")
       landingPagesIndex--;
       if(landingPagesIndex < 0) landingPagesIndex = res.landingPages.length - 1;
       // console.log(landingPagesData.alt);
+      landingPagesData = res.landingPages[landingPagesIndex];
       projectImgContainer.innerHTML = 
           `<img src="${landingPagesData.logo}" alt="${landingPagesData.alt}">
           <div class="project-links">
