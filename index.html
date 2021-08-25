@@ -41,7 +41,7 @@
     </nav>
   </header>
 
-  <section id="home" class="contents home active">
+  <section id="home" class="contents home">
     <div class="home__gradient"></div>
     <div class="home__content">
       <h1 class="h1-lg">Hi I'm Jomer</h1> 
@@ -86,43 +86,39 @@
       </div>
     </article>
     <div class="title-head-2">
-      <h3>Technologies</h3>
+      <h3>Tech Stack</h3>
       <div class="line"></div>
     </div>
     <article class="technologies">
       <div class="tech-container">
         <img src="./images/logos/html-5.svg" alt="html">
         <p class="tech-name">html</p>
-      </div><div class="tech-container">
+      </div>
+      <div class="tech-container">
         <img src="./images/logos/css.svg" alt="css">
         <p class="tech-name">css</p>
-      </div><div class="tech-container">
+      </div>
+      <div class="tech-container">
         <img src="./images/logos/js.svg" alt="js">
         <p class="tech-name">JavaScript</p>
-      </div><div class="tech-container">
+      </div>
+      <div class="tech-container">
         <img src="./images/logos/sass.svg" alt="sass">
         <p class="tech-name">sass</p>
-      </div><div class="tech-container">
+      </div>
+      <div class="tech-container">
         <img src="./images/logos/bootstrap.svg" alt="bs">
         <p class="tech-name">bootstrap</p>
-      </div><div class="tech-container">
-        <img src="./images/logos/photoshop.svg" alt="ps">
-        <p class="tech-name">photoshop</p>
-      </div><div class="tech-container">
+      </div>
+      <div class="tech-container">
         <img src="./images/logos/figma.svg" alt="figma">
         <p class="tech-name">figma</p>
-      </div><div class="tech-container">
-        <img src="./images/logos/react.svg" alt="react">
-        <p class="tech-name">react</p>
-      </div><div class="tech-container">
-        <img src="./images/logos/html-5.svg" alt="react">
-        <p class="tech-name">git</p>
       </div>
     </article>
 
   </section>
 
-  <section id="projects" class="contents cont-item projects">
+  <section id="projects" class="contents cont-item projects active">
 
     <div class="title-head">
       <h3>Projects</h3>
@@ -143,7 +139,7 @@
           <p class="tech-use">
             HTML CSS JavaScript Sass
           </p>
-          <p class="project-desc">This projects allows me to enhance to my skills and get comfortable in styling the website such as practicing the flex box and to make a responsive website and also use preprocessor such as Sass</p>
+          <p class="project-desc">These are Landing Pages that I've got in frontend-mentor.io. These project helps me to enhance my skills in HTML5 CSS3 and little bit JavaScript it also make me comfortable in accessing the DOM in Vanilla JS. These landing also enable me to learn CSS preprocessor which is Sass.</p>
         </div>
         <div class="btn-container-left">
           <span class="pprev-btn"><i class="fas fa-angle-left"></i></span>
@@ -151,30 +147,39 @@
         <div class="btn-container-right">
           <span class="pnext-btn"><i class="fas fa-angle-right"></i></span>
         </div>
-        
       </aritcle>
 
       <aritcle class="project-item">
-        <div class="project-item__img-container">
+        <div id="project-img-container" class="project-item__img-container">
+          <h2>ROCK PAPER SCISSOR GAME</h2>
+          <div class="project-links no-preview-page">
+            <a class="preview-page" target="_blank" href=""><i class="fas fa-eye"></i>Preview</a>
+            <a class="preview-code" target="_blank" href="https://github.com/jcoder6/EasyBank-landing-page"><i class="fab fa-github"></i>Git Hub</a>
+          </div>
         </div>
         <div class="project-item__desc">
-          <h4>Landing Pages</h4>
+          <h4>Rock Paper Scisscor</h4>
           <p class="tech-use">
-            HTML CSS JavaScript Sass
+            HTML CSS JavaScript
           </p>
-          <p class="project-desc">This projects allows me to enhance to my skills and get comfortable in styling the website such as practicing the flex box and to make a responsive website and also use preprocessor such as Sass</p>
+          <p class="project-desc">In this project I develop logic thinking and maximize the of logical operator (&&) this is mini project but it helps me a lot to manipulate the DOM like increamenting and decreasing score I also use setTime out in this project</p>
         </div>
       </aritcle>
 
       <aritcle class="project-item">
-        <div class="project-item__img-container">
+        <div id="project-img-container" class="project-item__img-container">
+          <h2>TO-DO LIST</h2>
+          <div class="project-links no-preview-page">
+            <a class="preview-page" target="_blank" href="#"><i class="fas fa-eye"></i>Preview</a>
+            <a class="preview-code" target="_blank" href="#"><i class="fab fa-github"></i>Git Hub</a>
+          </div>
         </div>
         <div class="project-item__desc">
-          <h4>Landing Pages</h4>
+          <h4>To do list</h4>
           <p class="tech-use">
-            HTML CSS JavaScript Sass
+            HTML CSS JavaScript
           </p>
-          <p class="project-desc">This projects allows me to enhance to my skills and get comfortable in styling the website such as practicing the flex box and to make a responsive website and also use preprocessor such as Sass</p>
+          <p class="project-desc">this project introduce me the local storage and it show how to input, delete, and edit data through the local storage. this projects enables me to put an input to the page and it gonna save it then if go back later on it gonna be there.</p>
         </div>
       </aritcle>
     </div>
@@ -207,6 +212,7 @@
           <input type="email" id="email" placeholder="Enter your Email" name="email" required>
           <label for="message">Message:</label> 
           <textarea type="message" id="message" class="message" placeholder="Message..." name="message" required></textarea>
+          <button type="submit" class="send-btn">send</button>
         </form>
       </aritcle>
     </div>

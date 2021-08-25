@@ -35,9 +35,16 @@ body {
   top: 0;
   margin: 10rem 5% 0 5%;
   transform: translateY(20%);
-  transition: all 200ms ease-in-out;
+  transition: all 500ms ease-in-out;
   max-height: 0rem;
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
+}
+
+.no-preview-page {
+  .preview-page {
+    pointer-events: none;
+    opacity: 0.6;
+  }
 }

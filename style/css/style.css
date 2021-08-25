@@ -222,12 +222,17 @@ body {
   margin: 10rem 5% 0 5%;
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
   max-height: 0rem;
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
+}
+
+.no-preview-page .preview-page {
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 .header {
@@ -572,9 +577,8 @@ body {
 
 @media (min-width: 40rem) {
   .projects-container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 1rem;
     width: 96%;
   }
@@ -613,11 +617,19 @@ body {
   background-color: #f0f0f0;
   cursor: pointer;
   overflow: hidden;
+  text-align: center;
+  padding: 2rem;
 }
 
 .projects-container .project-item__img-container:hover .project-links {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.projects-container .project-item__img-container h2 {
+  font-size: 3rem;
+  color: #040227;
+  margin-top: 5rem;
 }
 
 .projects-container .project-item__img-container img {
@@ -675,6 +687,9 @@ body {
   background-color: #040227;
   padding: 2rem;
   position: relative;
+  height: 27rem;
+  max-height: 27rem;
+  overflow-y: auto;
 }
 
 .projects-container .project-item__desc h4 {
@@ -924,6 +939,32 @@ body {
   padding: 1rem 2rem;
   overflow: auto;
   font-family: "Noto Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.contacts__content .contact-form .send-btn {
+  display: inline-block;
+  padding: 0.7rem 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5c5c5c), to(#040227));
+  background: linear-gradient(to bottom, #5c5c5c, #040227);
+  color: #f0f0f0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.contacts__content .contact-form .send-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #f3aa44;
 }
 
 .active {
