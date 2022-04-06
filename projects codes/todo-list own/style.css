@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 6rem;
+  line-height: 1.2;
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.alert {
+  position: absolute;
+  text-transform: capitalize;
+  padding: 5px 5rem;
+  top: 1.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  opacity: 0.7;
+}
+
+.success {
+  background-color: green;
+  color: white;
+}
+.danger {
+  background-color: red;
+  color: black;
+  font-size: bold;
+}
+.list-container {
+  border: 1px solid pink;
+  box-shadow: 3px 6px 15px rgb(0 0 0 / 20%);
+  width: 70%;
+  margin: auto;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.list-container input {
+  width: 80%;
+  font-size: 1rem;
+  padding: 10px 16px;
+}
+
+.list-container button {
+  padding: 10px 2rem;
+  background-color: pink;
+  font-size: 1rem;
+  border: none;
+}
+
+form {
+  margin-bottom: 3rem;
+}
+.items-container {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 1rem 10px;
+}
+
+.item {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1.3rem;
+}
+
+.edit-btn {
+  color: green;
+  margin-left: auto;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.del-btn {
+  color: red;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.edit-btn:hover,
+.del-btn:hover {
+  transform: scale(1.2);
+}
+
+.clear-btn {
+  padding: 10px 30px;
+  background-color: rgb(201, 201, 201);
+  color: red;
+  display: inline;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+  visibility: hidden;
+}
+
+.show-clear-btn {
+  visibility: visible;
+}
+.clear-btn:hover {
+  background-color: transparent;
+  border: 2px solid red;
+}
