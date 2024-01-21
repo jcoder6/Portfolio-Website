@@ -3,7 +3,7 @@
   pointer-events: none;
   width: 100%;
   height: 100vh;
-  background-image: url('https://raw.githubusercontent.com/jcoder6/Portfolio-Website/master/images/mobile.png');
+  background-image: url("../../../../images/mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: hidden;
@@ -21,7 +21,7 @@
     padding: 10rem;
     justify-content: flex-start;
     align-items: center;
-    background-image: url('https://raw.githubusercontent.com/jcoder6/Portfolio-Website/master/images/computer.png');
+    background-image: url("../../../../images/mobile.png");
   }
 
   &__gradient {
