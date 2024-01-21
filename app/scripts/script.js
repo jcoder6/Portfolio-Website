@@ -175,7 +175,7 @@ const resumeLinks = document.querySelectorAll('.resumeLink');
 resumeLinks.forEach((resumeLink) => {
   resumeLink.addEventListener('click', () => {
     setTimeout(function() {
-      window.location.href = "/"; // Redirect to the root #home
+      window.location.href = "https://jcoder6.github.io/Portfolio-Website/"; // Redirect to the root #home
     }, 1000);
   })
 })
