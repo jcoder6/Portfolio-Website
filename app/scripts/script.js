@@ -168,3 +168,17 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
+
+const resumeLinks = document.querySelectorAll('.resumeLink');
+
+
+resumeLinks.forEach((resumeLink) => {
+  resumeLink.addEventListener('click', () => {
+    setTimeout(function() {
+      window.location.href = "/"; // Redirect to the root #home
+    }, 1000);
+  })
+})
+
+
+
