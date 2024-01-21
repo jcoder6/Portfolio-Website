@@ -380,7 +380,7 @@ body {
   pointer-events: none;
   width: 100%;
   height: 100vh;
-  background-image: url("https://jcoder6.github.io/Portfolio-Website/images/mobile.png");
+  background-image: url("https://raw.githubusercontent.com/jcoder6/Portfolio-Website/master/images/mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow-y: hidden;
@@ -412,7 +412,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("https://jcoder6.github.io/Portfolio-Website/images/computer.png");
+    background-image: url("https://raw.githubusercontent.com/jcoder6/Portfolio-Website/master/images/computer.png");
   }
 }
 
